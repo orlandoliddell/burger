@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Uneaten</h1>
+            <ul>
+                {{#each burgersUneaten}}
+                <li>
+                    <p>
+                        {{name}}
+                    </p>
+                    <button value="{{ id }}" class="btn btn-primary"></button>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col">
+            <h1>Eaten</h1>
+            <ul>
+                {{#each burgersEaten}}
+                <li>
+                    <p>
+                        {{ name }}
+                    </p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
